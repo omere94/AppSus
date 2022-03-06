@@ -1,0 +1,41 @@
+    .home-page {
+        height: 80vh;
+    }
+    
+    .home-page .container {
+        padding: 1rem;
+        font-size: 20px;
+        color: white;
+    }
+    
+    .home-page .container h1 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    
+    .home-page .hero {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://steelcase-res.cloudinary.com/image/upload/v1583874836/www.steelcase.com/2020/03/10/Suddenly_Working_from_Home.png");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        width: 100vw;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        user-select: none;
+    }
+    
+    .home-page .hero button:hover {
+        border-radius: 0px;
+    }
+    
+    .home-page h3 a {
+        color: white;
+    }
+    
+    .home-page h3 a:hover {
+        color: #ffe868;
+        text-decoration: underline;
+        color: lightgoldenrodyellow
+    }

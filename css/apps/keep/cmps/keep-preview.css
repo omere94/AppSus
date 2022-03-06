@@ -1,0 +1,24 @@
+/*FOR VIDEO NOTES */
+
+.note-video iframe {
+    max-width: 100%;
+}
+
+/* For todos list */
+
+.note-todo {
+    text-align: justify;
+    padding-left: 10px;
+}
+
+.note-todo .todos-list {
+    padding-left: 15px;
+}
+
+.note-todo .todo {
+    cursor: pointer;
+}
+
+.note-todo .todo.done {
+    text-decoration: line-through;
+}

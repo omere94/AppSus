@@ -1,0 +1,13 @@
+@import "../cmps/keep-list.css";
+@import "../cmps/keep-add.css";
+@import "../cmps/keep-edit.css";
+@import "../cmps/keep-preview.css";
+@import "../cmps/keep-filter.css";
+.selected {
+    color: orange;
+}
+
+.keep-app .notes h2 {
+    padding-left: 8px;
+    text-decoration: underline;
+}

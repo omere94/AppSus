@@ -1,0 +1,38 @@
+.keep-filter {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 1.5rem auto;
+    opacity: 0.9;
+}
+
+.keep-filter * {
+    font-size: 1.2rem;
+    padding: 0.5em 0.5em;
+}
+
+.keep-filter input,
+.keep-filter select {
+    cursor: pointer;
+    line-height: 1.5;
+    height: fit-content;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin: 0 5px;
+}
+
+.keep-filter select {
+    border-left: 1px solid #DEE1EC;
+}
+
+@media (max-width:560px) {
+    .keep-filter {
+        max-width: 100%;
+    }
+    .keep-filter * {
+        font-size: 0.9rem;
+    }
+}

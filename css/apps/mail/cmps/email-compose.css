@@ -1,0 +1,41 @@
+.email-compose {
+    margin-top: 1rem;
+}
+
+.email-compose-form {
+    min-height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.compose-form-fields>* {
+    margin-bottom: 1rem;
+}
+
+.email-compose .save {
+    background-color: transparent;
+    border: none;
+    align-self: flex-start;
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+}
+
+.email-compose h4 {
+    margin-bottom: 1rem;
+}
+
+.email-compose label {
+    font-size: 0.9rem;
+}
+
+.email-compose-form>*:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.email-compose .compose-button-container {
+    display: flex;
+    justify-content: space-between;
+}

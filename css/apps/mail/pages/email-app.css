@@ -1,0 +1,136 @@
+@import '../cmps/email-filter.css';
+@import '../cmps/email-list.css';
+@import '../cmps/email-details.css';
+@import '../cmps/email-preview.css';
+@import '../cmps/email-compose.css';
+.email-app {
+    background-color: #DEE1EC;
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 80vh;
+}
+
+.email-app .main {
+    display: flex;
+}
+
+.email-app .side-menu {
+    margin-right: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.email-app .side-menu li {
+    display: flex;
+    height: 2rem;
+    padding: 5px;
+    text-transform: capitalize;
+    cursor: pointer;
+    align-items: center;
+}
+
+.email-app .side-menu a {
+    color: black;
+}
+
+.email-app .side-menu .compose {
+    display: flex;
+    align-items: center;
+    background-color: orange;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 10rem;
+}
+
+.email-app .side-menu .compose::before {
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+.email-app .side-menu .inbox::before {
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.email-app .side-menu .sent::before {
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.email-app .side-menu .starred::before {
+    color: black;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.email-app .side-menu .drafts::before {
+    margin-right: 10px;
+    margin-left: 4px
+}
+
+.star:hover,
+.starred {
+    color: orange;
+    cursor: pointer;
+}
+
+.selected {
+    color: orange;
+}
+
+.email-app .side-menu li:hover:not(:first-child) {
+    background-color: orange;
+    border-radius: 10px 50px 50px 10px;
+}
+
+.myStatus {
+    background-color: #e9ecef;
+    position: relative
+}
+
+.myStatus p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.myBar {
+    height: 20px;
+    background-size: 20px 20px;
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent)
+}
+
+@media (max-width: 850px) {
+    .email-app {
+        max-width: unset;
+        margin: 5px;
+        height: unset;
+    }
+    .email-app .main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .email-app .side-menu {
+        margin-right: unset;
+        flex-direction: row;
+        align-items: center;
+        font-size: 13px
+    }
+    .email-app .side-menu li {
+        display: flex;
+        height: 2rem;
+        padding: 5px;
+        text-transform: capitalize;
+        cursor: pointer;
+        align-items: center;
+    }
+    .email-app .side-menu .compose {
+        width: unset;
+    }
+    .email-app .side-menu .email-status {
+        display: none;
+    }
+}

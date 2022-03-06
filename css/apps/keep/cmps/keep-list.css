@@ -1,0 +1,39 @@
+.notes-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+    grid-auto-flow: dense;
+    gap: 5px;
+    margin-bottom: 5px;
+    padding-left: 100px;
+}
+
+.notes-list>li {
+   border-radius: 10px;
+    align-items: center;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+/* Disallows overflow on the notes */
+
+.notes-list li .title,
+.notes-list li .txt {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-align: left;
+    line-height: 1.5;
+    padding: 5px;
+}
+
+.notes-list>li:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

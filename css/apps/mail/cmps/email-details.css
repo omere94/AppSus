@@ -1,0 +1,81 @@
+.email-details {
+    background-color: #DEE1EC;
+    padding: 0px 20px 40px;
+    position: relative;
+    overflow: hidden;
+    max-width: 1400px;
+    flex: 1;
+}
+
+.details-button-container a:hover,
+.details-button-container button:hover {
+    opacity: 1;
+}
+
+.email-details>* {
+    margin: 0.5rem 0;
+}
+
+.details-button-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.details-button-container .delete-mail {
+    position: absolute;
+    top: 20%;
+    align-self: flex-end;
+    padding: 0;
+}
+
+.bottom-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-buttons a {
+    color: #292929;
+}
+
+.details-button-container a,
+.details-button-container button {
+    border: none;
+    opacity: 0.5;
+    background-color: transparent;
+}
+
+.email-details>:nth-child(4) {
+    margin-bottom: 2rem;
+}
+
+.address-details {
+    display: flex;
+    padding-bottom: 1rem;
+    font-size: 0.8rem;
+}
+
+.address-details>:first-child {
+    margin-right: 2rem;
+}
+
+.details-timestamp {
+    font-size: 0.8rem;
+}
+
+textarea {
+    height: 15vh;
+    border: none;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    resize: none;
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    background-color: #f1f1f1;
+}
+
+pre {
+    overflow-wrap: break-word;
+}

@@ -1,0 +1,39 @@
+.app-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    font-family: fantasy;
+}
+
+.app-header .logo {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.266em;
+    margin-left: 10px;
+}
+
+.app-header .logo a {
+    font-size: 1rem;
+}
+
+.app-header a {
+    color: white;
+    font-size: 1.266rem;
+}
+
+.app-header nav a:hover {
+    color: #C82121
+}
+
+.app-header nav {
+    margin-right: 1rem;
+}
+
+.app-header nav span {
+    background-color: #333;
+}
+
+.app-header nav .router-link-exact-active {
+    color: orange;
+}

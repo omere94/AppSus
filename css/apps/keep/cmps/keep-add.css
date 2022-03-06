@@ -1,0 +1,50 @@
+            .keep-add {
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                background-color: #fff;
+                border-radius: 10px;
+                width: fit-content;
+                margin: 1.5rem auto;
+                max-width: 100%;
+            }
+            
+            .keep-add * {
+                font-size: 1.2rem;
+                outline: none;
+                border: none;
+            }
+            
+            .keep-add .buttons-container {
+                padding: 0.5em;
+            }
+            
+            .keep-add input {
+                padding: 0.5em;
+                height: fit-content;
+                border-radius: 10px;
+                text-align: center;
+            }
+            
+            .keep-add button {
+                background-color: transparent;
+                opacity: 0.5;
+            }
+            
+            .keep-add button:last-of-type {
+                padding-right: 5px;
+            }
+            
+            .keep-add button:hover,
+            .keep-add button.selected {
+                opacity: 1;
+            }
+            
+            @media (max-width:560px) {
+                .keep-add {
+                    flex-direction: column-reverse;
+                }
+                .keep-add .buttons-container {
+                    margin: auto;
+                }
+            }

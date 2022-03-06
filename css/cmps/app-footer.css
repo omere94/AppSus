@@ -1,0 +1,12 @@
+.app-footer {
+    color: 333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.app-footer p {
+    font-size: 1rem;
+    margin: 10px;
+}

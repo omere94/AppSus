@@ -1,0 +1,54 @@
+   .email-preview {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       box-shadow: 0 0 3px 0px #46464640;
+       transition: 0.3s;
+       padding: 20px
+   }
+   
+   .email-preview .action {
+       width: 50px;
+       justify-content: space-between;
+   }
+   
+   .email-preview-container a {
+       color: black;
+   }
+   
+   .bold {
+       font-weight: bold;
+   }
+   
+   .unread {
+    background-color: #b68b149a;
+   }
+   
+   .read {
+       background-color: #DEE1EC;
+       font-weight: normal;
+   }
+   
+   .email-preview:hover {
+       z-index: 3;
+       margin: 0;
+       box-shadow: rgba(0, 0, 0, 0.35) 0rem 1rem 2rem;
+   }
+   
+   .email-preview .from {
+       flex: 0 0 150px;
+       overflow: hidden;
+       text-overflow: ellipsis;
+       height: 1rem;
+       white-space: nowrap;
+   }
+   
+   @media (max-width: 850px) {
+       .email-preview {
+           flex-direction: column;
+           padding: 5px
+       }
+       .email-preview .from {
+           flex: 0 0 20px;
+       }
+   }

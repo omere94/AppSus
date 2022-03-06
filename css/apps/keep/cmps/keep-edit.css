@@ -1,0 +1,95 @@
+        .keep-edit {
+            padding: 10px;
+        }
+        /* MODAL */
+        
+        .keep-edit .remove-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 20%;
+            background-color: #333;
+            color: #eee;
+            padding: 20px;
+            width: 400px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+        }
+        
+        .keep-edit .remove-modal.modal-show {
+            display: block;
+        }
+        
+        .keep-edit .remove-modal button {
+            padding: 10px 20px;
+            color: white;
+            background-color: #333;
+        }
+        
+        .keep-edit .remove-modal button:hover {
+            background-color: #333;
+            color: #292929;
+        }
+        
+        .keep-edit .edit-btns,
+        .edit-section {
+            margin-bottom: 10PX;
+        }
+        
+        .keep-edit input {
+            max-width: 100%;
+        }
+        
+        .keep-edit button:hover {
+            background-color: #333;;
+        }
+        
+        .keep-edit .update-btn {
+            background-color: #fff;
+            color: #292929;
+            font-weight: bold;
+            margin: 10px;
+            align-self: center;
+        }
+        
+        .keep-edit .update-btn:hover {
+            background-color: #b68b149a;
+        }
+        /*EDIT MODE */
+        
+        .edit-section form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .edit-section form input {
+            text-align: center;
+            border-radius: 10px;
+            padding: 5px;
+        }
+        /* COLOR CHANGE MODE */
+        
+        .color-change-section .colors-container {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        .color-change-section label {
+            cursor: pointer;
+            margin: 3px;
+            background-color: rgb(138, 134, 134);
+            border-radius: 5px;
+            padding: 3px 3px 3px 7px;
+        }
+        
+        .color-change-section input {
+            display: none;
+        }
+        
+        @media (max-width:560px) {
+            .keep-edit .remove-modal {
+                left: 0;
+                width: 100%;
+            }
+        }

@@ -1,0 +1,61 @@
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.inline-list {
+    list-style-type: none;
+}
+
+.inline-list li {
+    display: inline-block;
+}
+
+.flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-content-start {
+    align-content: flex-start;
+}
+
+.align-content-center {
+    align-content: center;
+}
+
+.align-content-end {
+    align-content: flex-end;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.centered-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown:hover>.dropdown-content {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown .dropdown-content {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.app-main {
+    height: 80vh;
+}
